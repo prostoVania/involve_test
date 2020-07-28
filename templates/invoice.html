@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form name="Invoice" method="{{ method }}" action="https://payeer.com/api/merchant/process.php" >
+    <input type="hidden" name="lang" value="{{ lang }}"/>
+    <input type="hidden" name="m_curorderid" value="{{ m_curorderid }}"/>
+    <input type="hidden" name="m_historyid" value="{{ m_historyid }}"/>
+    <input type="hidden" name="m_historytm" value="{{ m_historytm }}"/>
+    <input type="hidden" name="referer" value="{{ referer }}"/>
+{#    <input type="submit"/>#}
+</form>
+
+<script type="text/javascript">
+    document.Invoice.submit();
+</script>
+</body>
+</html>

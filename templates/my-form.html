@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    form {
+        margin: 0 auto;
+        width: 250px;
+    }
+    h1 {
+        margin: 0 auto;
+        width: 400px;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+{% if message %}
+<h1>
+    {{ message }}
+</h1>
+{% endif %}
+<form method="POST">
+    <p>
+        <b>Payment sum</b><br>
+        <label>
+            <input name="sum">
+        </label>
+    </p>
+    <p>
+        <b>Currency</b><br>
+        <label>
+            <select name="currency">
+                <option value="840">USD</option>
+                <option value="978">EUR</option>
+                <option value="643">RUB</option>
+            </select>
+        </label>
+    </p>
+
+    <input type="submit" value="Pay!">
+</form>
+</body>
+</html>
