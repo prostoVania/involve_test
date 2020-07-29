@@ -3,7 +3,6 @@ Test task for Involve
 
 Deploy locally:
 ```
-#
 git clone https://github.com/prostoVania/involve_test.git
 cd involve
 docker build -t involve-kalishuk:latest .
